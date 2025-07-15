@@ -7,7 +7,7 @@ A Python project that uses YOLOv8 for real-time vehicle detection and counting v
 
 ---
 
-![Demo](Assets/demo.gif) <!-- Replace with an actual demo GIF or image -->
+![Demo](Assets/Demo-CarCounterYOLO.mp4) <!-- Replace with an actual demo GIF or image -->
 
 ---
 
