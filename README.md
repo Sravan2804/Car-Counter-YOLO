@@ -1,9 +1,6 @@
-# Car Counter YOLO
-A Python project that uses YOLOv8 for real-time vehicle detection and counting via camera or a video.
+# 🚗 Car Counter using YOLOv8
 
-# 🚗 Real-Time Vehicle Counter using YOLOv8, OpenCV & SORT
-
-> ⚡ A robust, real-time vehicle detection, tracking, and counting system built with YOLOv8, OpenCV, and the SORT algorithm. Designed for traffic surveillance, smart city analytics, and intelligent transportation systems.
+A real-time car counting system powered by YOLOv8 and OpenCV. This project detects and counts vehicles in traffic surveillance videos, making it a practical solution for smart city applications such as traffic monitoring, vehicle analytics, and transport optimization.
 
 ---
 
@@ -15,16 +12,23 @@ A Python project that uses YOLOv8 for real-time vehicle detection and counting v
 
 ## 📌 Features
 
-- 🔍 **YOLOv8-based object detection** (cars, buses, trucks, motorbikes)
-- 🎯 **Accurate tracking** using the SORT (Simple Online and Realtime Tracking) algorithm
-- 🧠 **Region of Interest (ROI)** masking to filter detections
-- 🧮 **Vehicle counting** logic based on line-crossing
-- 🎨 **Overlay graphics** using transparent PNGs
-- 🎥 Compatible with **videos and webcams**
-- 🧰 Easy to **configure, extend, and deploy**
+-  **YOLOv8-based object detection** (cars, buses, trucks, motorbikes)
+-  **Accurate tracking** using the SORT (Simple Online and Realtime Tracking) algorithm
+-  **Region of Interest (ROI)** masking to filter detections
+-  **Vehicle counting** logic based on line-crossing
+-  **Overlay graphics** using transparent PNGs
+-  Compatible with **videos and webcams**
+-  Easy to **configure, extend, and deploy**
 
 ---
 
+## 🚀 Technologies Used
+
+- [Python 3.x](https://www.python.org/)
+- [YOLOv8](https://github.com/ultralytics/ultralytics)
+- [OpenCV](https://opencv.org/)
+- [Ultralytics](https://pypi.org/project/ultralytics/)
+  
 ---
 
 ## 🚀 Getting Started
@@ -71,23 +75,32 @@ cap = cv.VideoCapture(0)
 | cvzone       | Simplified UI overlays on OpenCV    |
 | SORT         | Object tracking (ID assignment)     |
 | NumPy        | Array math and matrix ops           |
-| Python 3.8+  | Programming language                |
+| Python 3.9+  | Programming language                |
 
-## Use Cases
-- 🚦 Smart traffic monitoring
-- 📈 Traffic flow analytics
-- 🚧 Toll booth vehicle counting
-- 🅿️ Parking management systems
-- 🎥 CCTV-based traffic insights
-- 🏙️ Smart city dashboards
+## 🧠 How It Works
+
+- Load YOLOv8 model
+- Process each frame of the input video
+- Detect cars and count them based on crossing a predefined line
+- Display the count live on video output
+
+
+
+## Real-world Relevance
+
+- Smart traffic monitoring
+- Traffic flow analytics
+- Toll booth vehicle counting
+- Parking management systems
+- CCTV-based traffic insights
+- Smart city dashboards
 
 
 ## 🧰 Future Improvements
 - Direction-aware IN/OUT counting
 - Log results to CSV/Excel
 - Streamlit or Gradio Web UI
-- Export video with bounding boxes
-- FPS & system resource monitor
+- Track unique cars using Deep SORT
 - Multi-lane, multi-zone tracking
 
 
